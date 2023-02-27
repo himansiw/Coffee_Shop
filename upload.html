@@ -1,0 +1,78 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Upload</title>
+	<script type="text/javascript" src="../jq/jquery.js"></script>
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css">
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body {
+			background-image: url(img/bg.jpg);
+		}
+		input[type=file] {
+			width: 100%;
+			padding: 6px 8px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid LightGray;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=submit] {
+			width: 49.38%;
+			background-color: chocolate;
+			color: white;
+			padding: 6px 8px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-weight: bold;
+		}
+		input[type=reset] {
+			width: 49.38%;
+			background-color:Red;
+			color: white;
+			padding: 6px 8px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-weight: bold;
+		}
+		input[type=submit]:hover {
+			background-color:#F5DEB3 ;
+		}
+		input[type=reset]:hover {
+			background-color :	#F5DEB3;
+		}
+		div {
+			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+			margin: auto;
+			width: 30%;
+			border: 2px solid Gray;
+			border-radius: 15px;
+			background-color: #DEB887;
+			padding: 20px;
+		}
+		h3 {
+			text-align: center;
+		}
+		hr {
+			border-color: Gray;
+		}
+	</style>
+</head>
+<body>
+	<br>
+	<div>
+		<h3>Select images to upload</h3><hr noshade>
+		<form action="upload.php" method="post" enctype="multipart/form-data">
+			<input type="file" name="fup">
+			<input type="submit" value="Upload Image" name="upload">
+			<input type="reset" name="clear" value="Clear">
+		</form>
+	</div>
+</body>
+</html>
